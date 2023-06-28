@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Banana Crop Recommendation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("{{ url_for('static',filename='/images/back.jpg') }}");
+      background-size: cover;
+      backdrop-filter: blur(8px);
+    }
+    
+    .container {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+   
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 19px;
+      line-height: 1.5;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    img {
+      max-width: 70%;
+      height: auto;
+      margin-top: 20px;
+      transition: transform 0.5s;
+    }
+    
+    img:hover {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Recommended Crop: </h1>
+    <h2>Banana</h2>
+    <p>Banana is a popular tropical fruit known for its sweet taste and high nutritional value. It is rich in potassium, fiber, and vitamins. Bananas are widely consumed fresh and are also used in baking, smoothies, and other culinary applications. The banana plant is characterized by large, lush leaves and clusters of fruits that grow in a hanging bunch.</p>
+    <img src="{{ url_for('static',filename='/images/banana.webp') }}" alt="Pigeonpea Image">
+  </div>
+</body>
+</html>

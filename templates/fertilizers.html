@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fertilizers</title>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+ 
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-DJjKNwAB0W3Oo2mYGddjZm0G1Pk5t/JmSFs1NfOgATFQVxB02s5s0GRMjT17LIK6" crossorigin="anonymous">
+     
+
+ <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+
+    <h2 class="heading">Know more about the fertilizers and Other requirements of the crops</h2>
+
+    <div class="crop-info">
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/rice.jpg') }}" class="crop-image" alt="Crop 1" />
+            <div class="crop-details">
+                <h3>Rice</h3>
+                <p>Nature of soil required: Loamy soil</p>
+                <p>Weather applicable: Temperate climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Regular watering</p>
+            </div>
+        </div>
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/kidney-beans.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Kidney-beans</h3>
+                <p>Nature of soil required: Sandy soil</p>
+                <p>Weather applicable: Hot and dry climate</p>
+                <p>Fertilizers needed: Phosphorus, Potassium</p>
+                <p>Other requirements: Adequate sunlight</p>
+            </div>
+        </div>
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/maize.jpg') }}" class="crop-image" alt="Crop 3" />
+            <div class="crop-details">
+                <h3>Maize</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Warm and sunny climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Adequate moisture</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/chickpeas.jpg') }}" class="crop-image" alt="Crop 4" />
+            <div class="crop-details">
+                <h3>Chick-peas</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Moderate climate</p>
+                 <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                 <p>Other requirements: Adequate sunlight</p>
+                </div>
+         </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/mung-beans.webp') }}" class="crop-image" alt="Crop 5" />
+            <div class="crop-details">
+                <h3>Mung-beans</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Warm and sunny climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Regular watering</p>
+            </div>
+        </div>
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/moth-beans.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Moth-beans</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Warm and dry climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Low water requirements</p>
+              </div>
+        </div>
+        
+
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/banana.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Banana</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Tropical climate</p>
+                <p>Fertilizers needed: Potassium, Phosphorus</p>
+                <p>Other requirements: Adequate moisture</p>
+            </div>
+        </div>
+
+
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/pomegranate.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Pomogranate</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Subtropical and Mediterranean climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Adequate sunlight</p>
+            </div>
+        </div>
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/grapes.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Grapes</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Temperate to subtropical climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Full sunlight, trellis or support system for vine growth</p>
+            </div>
+        </div>
+
+
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/blackgram.jpeg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Blackgram</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Warm and humid climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements:Partial shade</p>
+            </div>
+        </div>
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/papaya.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Papaya</h3>
+                <p>Nature of soil required: Well-drained sandy loam soil</p>
+                <p>Weather applicable: Tropical to subtropical climate</p>
+                <p>Fertilizers needed: Balanced NPK fertilizers</p>
+                <p>Other requirements: Full sunlight, regular watering, protection from strong winds</p>
+            </div>
+        </div>
+
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/jute.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Jute</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Warm and humid climate</p>
+                <p>Fertilizers needed: Organic manure and balanced NPK fertilizers</p>
+                <p>Other requirements: Ample sunlight, regular watering, and adequate drainage</p>
+            </div>
+        </div>
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/orange.jpeg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Orange</h3>
+                <p>Nature of soil required: Well-drained soil with a pH range of 6 to 7.5</p>
+                <p>Weather applicable: Subtropical to tropical climate</p>
+                <p>Fertilizers needed: Balanced NPK fertilizers with a focus on potassium</p>
+                <p>Other requirements: Full sunlight, regular watering, and protection from frost.</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/coconut.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Coconut</h3>
+                <p>Nature of soil required: Sandy loam or loamy soil</p>
+                <p>Weather applicable: Tropical and subtropical climate</p>
+                <p>Fertilizers needed: Balanced NPK fertilizers with an emphasis on potassium and micronutrients</p>
+                <p>Other requirements: Protection from winds</p>
+            </div>
+        </div>
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/watermelon.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Watermelon</h3>
+                <p>Nature of soil required: Sandy loam or loamy soil</p>
+                <p>Weather applicable: Tropical and subtropical climate</p>
+                <p>Fertilizers needed: NPK fertilizers with an emphasis on potassium and micronutrients</p>
+                <p>Other requirements: Adequate sun, well-drained soil,protection from strong winds</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/lentil.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Lentil</h3>
+                <p>Nature of soil required: Well-drained sandy loam or clay loam soil</p>
+                <p>Weather applicable: Cool and dry climate</p>
+                <p>Fertilizers needed: Nitrogen-fixing bacteria or inoculant, balanced NPK (Nitrogen, Phosphorus, Potassium) fertilizers</p>
+                <p>Other requirements: Adequate sunlight, Weed control, Crop rotation</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/mango.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Mango</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Tropical and subtropical climate</p>
+                <p>Fertilizers needed: Balanced NPK fertilizer</p>
+                <p>Other requirements: Full sun exposure, regular watering, and protection from frost</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/apple.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Apple</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Temperate climate</p>
+                <p>Fertilizers needed: Balanced NPK fertilizer</p>
+                <p>Other requirements: Full sun exposure, proper pruning, and pest control</p>
+            </div>
+        </div>
+
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/muskmelon.webp') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Muskmelon</h3>
+                <p>Nature of soil required: Well-drained sandy loam soil</p>
+               <p>Weather applicable: Warm and sunny climate</p>
+               <p>Fertilizers needed: Organic compost, balanced NPK fertilizer</p>
+            <p>Other requirements: Adequate sunlight, regular watering, trellising</p>
+            </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/cotton.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Cotton</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+                <p>Weather applicable: Warm and dry climate</p>
+                <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+                <p>Other requirements: Adequate sunlight, regular irrigation</p>
+        </div>
+        </div>
+
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/coffee.jpg') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Coffee</h3>
+                <p>Nature of soil required: Well-drained loamy soil</p>
+        <p>Weather applicable: Tropical and subtropical climates</p>
+        <p>Fertilizers needed: Nitrogen, Phosphorus, Potassium</p>
+        <p>Other requirements: Shaded environment, regular watering</p>
+            </div>
+        </div>
+    
+        
+        <div class="crop-item">
+            <img src="{{ url_for('static', filename='/images/pigeonpeas.png') }}" class="crop-image" alt="Crop 2" />
+            <div class="crop-details">
+                <h3>Pigeonpeas</h3>
+                <p>Nature of soil required: Well-drained soil</p>
+                <p>Weather applicable: Warm and dry climate</p>
+                <p>Fertilizers needed: Phosphorus, Potassium</p>
+                <p>Other requirements: Full sunlight, regular watering</p>
+            </div>
+        </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

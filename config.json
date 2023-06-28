@@ -1,0 +1,11 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri": "mysql://root:@localhost/krishi-mitra",
+        "prod_uri": "mysql://root:@localhost/krishi-mitra",
+        "gmail-user": "jeetmazumdar968@gmail.com",
+        "gmail-password": "iqqi dbea gljt qvgx"
+        
+    }
+}

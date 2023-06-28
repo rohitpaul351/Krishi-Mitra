@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Krishi-Mitra</title>
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+ 
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-DJjKNwAB0W3Oo2mYGddjZm0G1Pk5t/JmSFs1NfOgATFQVxB02s5s0GRMjT17LIK6" crossorigin="anonymous">
+     
+
+ <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+
+
+<header>
+
+<nav class="navbar navbar-dark bg-success fixed-top">
+<div class="logo"> 
+  <h1 style="font-size: 20px; font-family:Roboto,Arial,sans-serif;">
+    <img src="{{ url_for('static', filename='/images/logo.png') }}" class="img-responsive-krsh" alt="Team Member" />Krishi-Mitra</h1>
+  </div>
+
+
+<div class="menu">
+<a class= "nav-txt" href="#home">Home</a>
+<a class="nav-txt" target="_blank" href="predict.html">Predict Crops</a>
+<a class="nav-txt" href="#about" >About</a>
+<a class="nav-txt" href="#contribution"> Contribution </a>
+<a class="nav-txt" target="_blank" href="fertilizers.html">Fertilizers</a>
+</div>
+</nav>
+
+
+
+<div id="home">
+  <!-- Home page content goes here -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+</div>
+<main>
+<section>
+      <h3>Welcome To our Crop Recommendation Website!!!!!!!</h3>
+<h1>Which crop to grow?? <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
+<p>"Ek kadam KISANO ki or!!"</p>
+<a href="#learn-more" class="btnone">Learn More</a>
+<a href="#need-help" class="btntwo">Need Help?</a>
+</section>
+</main>
+
+
+</header>
+
+    <!-- Contribution section -->
+<section id = "contribution">
+    <div class="container">
+      <h2 class="our-team">Our Team</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="{{ url_for('static', filename='/images/PHOTO.jpeg') }}" class="img-responsive" alt="Team Member" />
+            <h4>Akansha Routh</h4>
+            <p class="text-muted">Role: Front-End Developer</p>
+            <p>A front-end developer is a professional who specializes in creating the user interface (UI) and user experience (UX) of a website or application. They are responsible for designing and developing the visual elements of the project that users interact with, including the layout, color scheme, typography, and navigation.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="{{ url_for('static', filename='/images/DSC_0160.JPG') }}" class="img-responsive" alt="Team Member" />
+            <h4>Rohit Paul</h4>
+            <p class="text-muted">Role: Machine Learning</p>
+            <p>Machine learning contributors must have excellent analytical and problem-solving skills, as well as the ability to communicate complex technical concepts to non-technical stakeholders. They should also stay up-to-date with the latest advances in machine learning techniques and technologies, and be able to apply them effectively to solve real-world business problems.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="{{ url_for('static', filename='/images/Subhadip.jpg') }}" class="img-responsive" alt="Team Member" />
+            <h4>Subhadip Ghosh</h4>
+            <p class="text-muted">Role: Azure Deployment</p>
+            <p>Azure deployment is the process of deploying an application or website on the Microsoft Azure cloud platform. Azure provides a wide range of tools and services to help developers deploy their applications quickly, securely, and at scale.</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="{{ url_for('static', filename='/images/jeet.jpg') }}" class="img-responsive" alt="Team Member" />
+            <h4>Jeet Mazumder</h4>
+            <p class="text-muted">Role: Back-End Developer</p>
+            <p>A backend developer is a professional who specializes in building the server-side of an application or website. They are responsible for developing, testing, and maintaining the code that runs on the server and handles requests from the front-end interface.
+
+              The backend developer works closely with other developers, designers, and stakeholders to ensure that the system is efficient, scalable, and meets the requirements of the project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!------------------------About section---------------------->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>About Our Crop Recommendation System</h2>
+          <hr class="star-primary">
+        </div>
+          </div>
+          <div class="row">
+          <div class="col-lg-12 col-lg-offset-2">
+          <p>Our crop recommendation system is an AI-powered tool designed to help farmers optimize their crop yield and increase their profits. Using a combination of machine learning algorithms and agricultural data, our system is able to recommend the best crops for a particular region based on factors such as soil type, weather patterns, and historical yield data.</p>
+          <p>To use this model, farmer has to go to the nearby soil testing center and bring the value of the amount of Nitrogen, Phosphorous, Potassium and pH level of the soil with the Temperature of the prevailing weather and the amount of rainfall in mm.</p>
+          <p>Our system is easy to use and provides farmers with personalized recommendations tailored to their specific needs. By using our system, farmers can make informed decisions about which crops to plant and when to plant them, resulting in higher crop yields and increased profits.
+ 
+   Whether you are a small-scale farmer or a large agricultural operation, our crop recommendation system can help you optimize your crop yield and increase your profits. Try it out today and see the difference it can make!
+ </p>
+       
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <h1>Testimonials</h1>
+  <div class="testimonial-slider">
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial1.jpg') }}" alt="Testimonial 1" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet magna id gravida bibendum. Mauris consequat pharetra odio, nec iaculis arcu iaculis nec.</p>
+        <p class="testimonial-author">John Doe</p>
+        <p class="testimonial-position">CEO, Company Name</p>
+      </div>
+    </div>
+    
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial2.jpg') }}" alt="Testimonial 2" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">Vestibulum id felis eget velit congue consectetur. Morbi tincidunt arcu at est convallis efficitur. Ut in ligula a elit tempus vestibulum vel eu lacus.</p>
+        <p class="testimonial-author">Jane Smith</p>
+        <p class="testimonial-position">Marketing Manager</p>
+      </div>
+    </div>
+    
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial3.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">Nulla mattis augue id orci posuere, eget cursus mauris luctus. Etiam iaculis lacinia libero non finibus. Sed suscipit turpis quis leo iaculis aliquam.</p>
+        <p class="testimonial-author">Michael Johnson</p>
+        <p class="testimonial-position">Sales Representative</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial4.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"After struggling for years with poor crop choices, I reached out to agricultural specialists for guidance. Their crop recommendations not only increased my harvest but also improved the quality of my produce. I now have a better understanding of the optimal planting and harvesting times, leading to higher market prices for my crops."</p>
+        <p class="testimonial-author">Raju Bauri</p>
+        <p class="testimonial-position">Silchar, Assam</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial5.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"Receiving crop recommendations has been a game-changer for my farm's profitability. The experts guided me to choose crops that have higher market demand and better price stability. By aligning my planting choices with market trends, I've been able to secure consistent sales and secure long-term contracts with buyers."</p>
+        <p class="testimonial-author">Harindar Kaur</p>
+        <p class="testimonial-position">Amritsar, Punjab</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial6.jpeg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"As a small-scale farmer, I didn't have access to extensive agricultural research. However, by reaching out to them I gained valuable insights into the most suitable crops for my farm. These recommendations were based on scientific data and weather conditions, which significantly improved my decision-making process."</p>
+        <p class="testimonial-author">Ram Bihari </p>
+        <p class="testimonial-position">Bihar, India</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial7.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"Ever since I started using Krishi-Mitra Crop Recommendations, my farming has become more efficient and sustainable. Their comprehensive analysis of soil health, crop nutrition, and pest management.Their comprehensive analysis of soil health and crop nutrition has helped me achieve higher yields while reducing chemical inputs."</p>
+        <p class="testimonial-author">Priya Patel</p>
+        <p class="testimonial-position">Uttar Pradesh, India</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial8.jpeg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"Ever since I started using it, my farming has become more profitable and sustainable. With their guidance, I have successfully implemented smart irrigation systems and crop rotation strategies, leading to healthier plants and increased yields.Their comprehensive analysis of soil health, crop nutrition, and pest management."</p>
+        <p class="testimonial-author">Sunita Verma</p>
+        <p class="testimonial-position">Haryana, India</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonial9.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+      <p class="testimonial-text">"I have been using Krishi-Mitra Crop Advisory for the past two seasons, and the results have been remarkable. Their expert recommendations on fertilizers, irrigation, and pest management have helped me optimize my resources and improve crop quality. Krishi-Mitra has truly become my go-to platform for reliable and practical farming advice."</p>
+        <p class="testimonial-author">Rekha Devi</p>
+        <p class="testimonial-position">Rajasthan, India</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="{{ url_for('static', filename='/images/testimonail10.jpg') }}" alt="Testimonial 3" class="testimonial-image">
+      <div class="testimonial-content">
+        <p class="testimonial-text">"Krishi-Mitra crop solutions has been a game-changer for my farming operations. Their advanced technologies and data-driven insights have empowered me to make informed decisions at every stage. With their assistance, I have witnessed a significant increase in productivity and profitability. Krishi-Mitra is a trusted partner for farmers like me who strive for excellence."</p>
+        <p class="testimonial-author">Harish Sharma</p>
+        <p class="testimonial-position">Maharastra, India </p>
+
+      </div>
+    </div>
+  </div>
+
+ 
+<!---------------------------learn more section ---------------->
+  <section id="learn-more">
+    <h2 class="row col-md-12" style="justify-content: center;"> More about KRISHI-MITRA website!!!!</h2>
+<hr class="star-primary">
+    <p>Welcome to our Crop Recommendation website! Our goal is to provide farmers and other agricultural professionals with the latest research-based information and best practices for growing crops. We understand that every crop and every farm is unique, and that's why we offer personalized recommendations based on your specific location, soil type, climate, and other factors.
+     Our team of experts has years of experience in crop production and can help you make informed decisions about crop selection,
+soil management, pest control, and plant nutrition. With our easy-to-use tools and resources, you can optimize your crop yields and improve your bottom line.
+Whether you're a seasoned farmer or just starting out, our website offers something for everyone. We provide a range of information, from basic tips for beginners to advanced techniques for experienced growers. We're committed to helping you succeed and are always here to answer your questions and provide guidance along the way.
+Thank you for visiting our website. We hope you find the information and resources here useful and look forward to helping you grow your best crops yet.</p>
+  </section>
+ 
+ <!-------------------------------------------help-section--------------------->
+  <section id="need-help" class="help-section">
+    <div class="help-container" action="http://localhost:5000/contact" method="POST">
+      <h2>Need Help?</h2>
+      <p>If you have any questions or concerns, please don't hesitate to reach out to us. Our customer support team is available 24/7 to assist you.</p>
+      <form class="help-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+ 
+<!------------------------Footer section--------------------------->
+ 
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="about-us">About Us</h3>
+        <p>Welcome to our Crop Recommendation website! We are dedicated to providing accurate and personalized recommendations for optimal crop growth. Our team of experts leverages advanced data analysis and machine learning algorithms to analyze various factors such as soil quality, climate conditions, and crop characteristics.</p>
+        <p>Whether you are a farmer looking to maximize your yield or a gardening enthusiast seeking advice for your home garden, our platform offers tailored crop recommendations to suit your specific needs. We aim to empower farmers and growers with the knowledge and tools necessary to make informed decisions and achieve better outcomes.</p>
+      </div>
+      <div class="col-md-3">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fa fa-map-marker"></i> Kolkata, West Bengal, India</li>
+          <li><i class="fa fa-envelope"></i> Email: <a href="mailto:info@krishimitra.com">info@krishimitra.com</a></li>
+          <li><i class="fa fa-phone"></i> Phone: +91 820458990</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>Follow Us</h3>
+        <ul class="social-media">
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.googleplus.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-google plus"></i></a></li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <p class="text-center">© 2023 KRISHI-MITRA. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+ </body>
+</html>

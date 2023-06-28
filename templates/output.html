@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Krishi-Mitra - Output</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/output.css">
+  <style>
+    .img {
+      padding: 200px;
+    }
+  </style>
+</head>
+<body>
+  <img src="{{ url_for('static', filename='images/output.jpeg') }}" alt="">
+  <h1>Crop Recommendation Results: {{result}}</h1>
+  
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mothbeans Crop Recommendation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url("{{ url_for('static',filename='/images/back.jpg') }}");
+      background-size: cover;
+      backdrop-filter: blur(8px);
+    }
+    
+    .container {
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+    }
+   
+    h1 {
+      font-size: 38px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 19px;
+      line-height: 1.5;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    img {
+      max-width: 70%;
+      height: auto;
+      margin-top: 20px;
+      transition: transform 0.5s;
+    }
+    
+    img:hover {
+      transform: scale(0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Recommended Crop: </h1>
+    <h2>Mothbeans</h2>
+    <p>Moth beans, also known as matki or dew beans, are a drought-tolerant pulse crop commonly cultivated in arid and semi-arid regions. They are rich in protein, dietary fiber, and essential nutrients. Moth beans are known for their small size, nutty flavor, and versatility in various culinary preparations.</p>
+   
+    <img src="{{ url_for('static',filename='/images/moth-beans.jpg') }}" alt="Cotton Image">
+  </div>
+</body>
+</html>
+
